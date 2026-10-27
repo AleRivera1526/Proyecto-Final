@@ -1,0 +1,237 @@
+
+/* =======================================
+   REGISTRO DE DEMÉRITOS - DISEÑO
+======================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #e8eef7,
+        #f5f7fb
+    );
+
+    min-height: 100vh;
+    padding: 40px 15px;
+    color: #243247;
+}
+
+.contenedor {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    background: linear-gradient(
+        135deg,
+        #17365d,
+        #245a96
+    );
+
+    color: white;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 16px 16px 0 0;
+}
+
+.icono {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 14px;
+    color: #dce8f7;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background: white;
+    padding: 35px;
+    border-radius: 0 0 16px 16px;
+
+    box-shadow: 0 10px 30px
+        rgba(0, 0, 0, 0.08);
+}
+
+.formulario h2 {
+    color: #17365d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #667085;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.grupo {
+    margin-bottom: 23px;
+}
+
+.grupo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #344054;
+}
+
+.grupo input,
+.grupo select {
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    font-size: 14px;
+    background: #ffffff;
+    color: #243247;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+.grupo input:focus,
+.grupo select:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px
+        rgba(37, 99, 235, 0.12);
+}
+
+.grupo small {
+    display: block;
+    color: #667085;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+/* DOS CAMPOS EN UNA FILA */
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.botones button {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-limpiar {
+    background: #e9edf3;
+    color: #344054;
+}
+
+.btn-limpiar:hover {
+    background: #dce3ed;
+}
+
+.btn-guardar {
+    background: #1764b5;
+    color: white;
+}
+
+.btn-guardar:hover {
+    background: #104d8c;
+    transform: translateY(-1px);
+}
+
+/* MENSAJES */
+
+.mensaje {
+    padding: 14px;
+    margin-bottom: 25px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.exito {
+    background: #e8f7ee;
+    color: #166534;
+    border: 1px solid #bbebcd;
+}
+
+.error {
+    background: #fff0f0;
+    color: #b42318;
+    border: 1px solid #f6c6c6;
+}
+
+/* PIE DE PÁGINA */
+
+.pie {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #667085;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .encabezado {
+        padding: 25px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 23px;
+    }
+
+    .formulario {
+        padding: 22px 17px;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #e9eef7,
+        #f7f9fc
+    );
+    min-height: 100vh;
+    padding: 35px 15px;
+    color: #263449;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.encabezado {
+    background: linear-gradient(
+        135deg,
+        #17365d,
+        #245a96
+    );
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 16px 16px 0 0;
+}
+
+.icono {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.encabezado h1 {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #dce8f7;
+    font-size: 14px;
+}
+
+.contenido {
+    background: white;
+    padding: 30px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.tarjeta {
+    border: 1px solid #e1e7f0;
+    border-radius: 13px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: white;
+}
+
+.tarjeta h2 {
+    color: #17365d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #667085;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.grupo {
+    margin-bottom: 23px;
+}
+
+.grupo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #344054;
+}
+
+.grupo input,
+.grupo select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font-size: 14px;
+    color: #243247;
+    background: white;
+    outline: none;
+    transition: 0.2s;
+}
+
+.grupo input:focus,
+.grupo select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+.grupo small {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #667085;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.botones button {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-limpiar {
+    background: #e9edf3;
+    color: #344054;
+}
+
+.btn-limpiar:hover {
+    background: #dce3ed;
+}
+
+.btn-guardar {
+    background: #1764b5;
+    color: white;
+}
+
+.btn-guardar:hover {
+    background: #104d8c;
+}
+
+.mensaje {
+    padding: 14px 16px;
+    margin-bottom: 25px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.exito {
+    background: #e8f7ee;
+    color: #166534;
+    border: 1px solid #bbebcd;
+}
+
+.error {
+    background: #fff0f0;
+    color: #b42318;
+    border: 1px solid #f6c6c6;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #17365d;
+    color: white;
+}
+
+th {
+    padding: 14px;
+    font-size: 13px;
+    text-align: left;
+}
+
+td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #e6eaf0;
+    font-size: 13px;
+}
+
+tbody tr:hover {
+    background: #f4f7fc;
+}
+
+.sin-registros {
+    padding: 20px;
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+}
+
+.pie {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #667085;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .encabezado {
+        padding: 25px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 24px;
+    }
+
+    .contenido {
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 17px;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones button {
+        width: 100%;
+    }
+}
